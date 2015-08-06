@@ -1,0 +1,4 @@
+include 'appium-adapter'
+include 'common'
+findProject(':common')?.name = 'core'
+
