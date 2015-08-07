@@ -1,19 +1,19 @@
 package com.sk.boteyes;
 
-import java.io.File;
-
-import org.opencv.imgproc.Imgproc;
-import org.sk.common.Point;
-import org.sk.common.Rect;
-
 import com.sk.api.opencv.OpenCVAdapter;
 import com.sk.api.opencv.OpenCVConfig;
 import com.sk.api.opencv.OpenCVMat;
 import com.sk.api.opencv.OpenCVResultMat;
+import org.opencv.imgproc.Imgproc;
+import org.sk.common.adapter.Adapter;
+
+import java.io.File;
 
 public class Start {
 
-    private static OpenCVAdapter adapter;
+    private final OpenCVAdapter adapter;
+
+    private final Adapter adapter;
 
     
     public Point extractCenter(String templateFilePath) {
