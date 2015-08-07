@@ -1,4 +1,4 @@
-package org.sk.common;
+package org.sk.common.location;
 
 public final class Rect {
 

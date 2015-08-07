@@ -31,11 +31,11 @@ public class Start {
     public Rect search(OpenCVMat template) {
         Rect rect = Rect.NOT_FOUNT;
         while (rect == Rect.NOT_FOUNT) {
-/*            File file = driver.getScreenshotAs(OutputType.FILE);
+            File file = driver.getScreenshotAs(OutputType.FILE);
             OpenCVMat target = new OpenCVMat(file.getAbsolutePath());
             OpenCVResultMat result = new OpenCVResultMat(target, template);
             OpenCVConfig config = new OpenCVConfig(Imgproc.TM_CCOEFF_NORMED, result);
-            rect = adapter.matchTemplate(config);*/
+            rect = adapter.matchTemplate(config);
         }
         return rect;
     }
